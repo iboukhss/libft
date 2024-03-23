@@ -6,10 +6,13 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:03:45 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/22 20:03:56 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/23 02:01:14 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c);
+int	ft_isprint(int c)
+{
+	return (c >= 32 && c <= 126);
+}

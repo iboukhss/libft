@@ -6,10 +6,13 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:01:10 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/22 20:01:29 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/23 01:58:45 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c);
+int	ft_isdigit(int c)
+{
+	return (c >= '0' && c <= '9');
+}
