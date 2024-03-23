@@ -14,7 +14,7 @@ SRCS += ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c
 SRCS += ft_strmapi.c ft_striteri.c
 SRCS += ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-OBJS = (SRCS:.c=.o)
+OBJS = $(SRCS:.c=.o)
 NAME = libft.a
 
 all: $(NAME)
