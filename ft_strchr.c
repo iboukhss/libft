@@ -6,10 +6,13 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:46:33 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/22 20:48:48 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/23 03:24:33 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c)
+{
+	return (ft_memchr(s, c, ft_strlen(s) + 1));
+}
