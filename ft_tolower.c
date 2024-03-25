@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:21:06 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/23 02:18:05 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 02:04:54 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
-		return (c + 32);
-	}
-	else
-	{
-		return (c);
-	}
+		c += 32;
+	return (c);
 }

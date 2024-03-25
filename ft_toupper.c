@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:20:16 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/23 02:19:01 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 02:04:32 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
-		return (c - 32);
-	}
-	else
-	{
-		return (c);
-	}
+		c -= 32;
+	return (c);
 }

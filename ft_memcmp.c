@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:49:52 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/23 14:25:11 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 01:46:18 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n--)
 	{
 		if (*p1 != *p2)
-		{
 			return (*p1 - *p2);
-		}
 		++p1;
 		++p2;
 	}
