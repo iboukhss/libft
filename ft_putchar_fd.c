@@ -6,10 +6,14 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:34:47 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/22 18:41:14 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 04:57:11 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
