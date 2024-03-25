@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:18:39 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 00:18:36 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 17:19:50 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		if (n > size - 1)
 			n = size - 1;
 		while (n--)
-			*dst++ = *src++;
+		{
+			*dst = *src;
+			++dst;
+			++src;
+		}
 		*dst = '\0';
 	}
 	return (srclen);

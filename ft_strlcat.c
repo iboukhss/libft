@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:19:22 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 00:18:50 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 17:20:46 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 			n = size - dstlen - 1;
 		dst += dstlen;
 		while (n--)
-			*dst++ = *src++;
+		{
+			*dst = *src;
+			++dst;
+			++src;
+		}
 		*dst = '\0';
 		return (dstlen + srclen);
 	}

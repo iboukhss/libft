@@ -6,11 +6,10 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:36:11 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 17:06:54 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 18:15:22 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

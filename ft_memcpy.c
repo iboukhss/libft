@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:12:45 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 03:15:44 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/25 17:16:46 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = dest;
 	s = src;
 	while (n--)
-		*d++ = *s++;
+	{
+		*d = *s;
+		++d;
+		++s;
+	}
 	return (dest);
 }
