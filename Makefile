@@ -1,3 +1,5 @@
+NAME = libft.a
+
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
@@ -15,7 +17,6 @@ SRCS += ft_strmapi.c ft_striteri.c
 SRCS += ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJS = $(SRCS:.c=.o)
-NAME = libft.a
 
 all: $(NAME)
 
