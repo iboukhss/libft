@@ -6,11 +6,10 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:31:20 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/26 02:40:06 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/26 23:10:36 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -19,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
-	str = malloc(size * sizeof(*str));
+	str = ft_calloc(size, sizeof(*str));
 	if (!str)
 		return (NULL);
 	ft_strlcpy(str, s1, size);
