@@ -6,10 +6,21 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/29 15:25:16 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/29 15:45:10 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/29 17:22:53 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst);
+int	ft_lstsize(t_list *lst)
+{
+	size_t	n;
+
+	n = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		++n;
+	}
+	return (n);
+}

@@ -28,7 +28,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $@ $^
 
-bonus: $(BONUS_OBJS)
+bonus: $(OBJS) $(BONUS_OBJS)
 	ar rcs $(NAME) $^
 
 %.o: %.c libft.h
@@ -42,4 +42,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
