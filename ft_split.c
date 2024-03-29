@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:32:15 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/27 00:13:51 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/29 14:12:14 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (i < count)
 	{
-		while (*s == c && *s)
+		while (*s && *s == c)
 			++s;
 		start = s;
-		while (*s != c && *s)
+		while (*s && *s != c)
 			++s;
 		tokens[i] = ft_substr(start, 0, s - start);
 		if (!tokens[i])

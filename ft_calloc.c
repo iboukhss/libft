@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:52:56 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/29 13:53:18 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/29 14:35:06 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
-	if (!nmemb || !size)
-		return (NULL);
-	if (nmemb > (size_t)-1 / size)
+	if (size && nmemb > (size_t)-1 / size)
 		return (NULL);
 	ptr = malloc(nmemb * size);
 	if (!ptr)
