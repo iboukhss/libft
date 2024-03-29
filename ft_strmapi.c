@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 18:33:43 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 21:29:57 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/29 23:10:12 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (str[i])
 	{
-		str[i] = (*f)(i, str[i]);
+		str[i] = f(i, str[i]);
 		++i;
 	}
 	return (str);
