@@ -6,7 +6,7 @@
 /*   By: iboukhss <iboukhss@student.42luxe...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:49:15 by iboukhss          #+#    #+#             */
-/*   Updated: 2024/03/25 01:45:43 by iboukhss         ###   ########.fr       */
+/*   Updated: 2024/03/29 14:09:51 by iboukhss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*p;
+	const unsigned char	*ptr;
 
-	p = s;
+	ptr = s;
 	while (n--)
 	{
-		if (*p == (unsigned char)c)
-			return ((unsigned char *)p);
-		++p;
+		if (*ptr == (unsigned char)c)
+			return ((unsigned char *)ptr);
+		++ptr;
 	}
 	return (NULL);
 }
